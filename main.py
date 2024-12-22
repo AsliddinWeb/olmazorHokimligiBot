@@ -318,7 +318,7 @@ async def message_handler(update: Update, context: ContextTypes.DEFAULT_TYPE) ->
             keyboard = get_settings_buttons(get_user_language(user.id))
             reply_markup = ReplyKeyboardMarkup(keyboard, resize_keyboard=True)
 
-            message = f"<b>{get_translation("settings", get_user_language(user.id))}:</b>"
+            message = f"<b>{get_translation('settings', get_user_language(user.id))}:</b>"
 
             await update.message.reply_html(text=message, reply_markup=reply_markup)
 
