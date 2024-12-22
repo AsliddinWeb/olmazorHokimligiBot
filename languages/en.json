@@ -1,0 +1,28 @@
+{
+    "welcome_language": "🌍 <b>Please select your language:</b>",
+    "enter_name": "✏️ <b>Please enter your full name:</b>",
+    "enter_phone": "📞 <b>Please share your phone number:</b>",
+    "phone": "📞 Phone number",
+    "main_menu": "🌍 <b>Main menu:</b>",
+
+    "send_appeal": "✍️ Send Appeal",
+    "my_appeals": "👨‍💻 My Appeals",
+    "settings": "⚙️ Settings",
+    "about": "🤖 About Bot",
+
+    "empty_appeals": "<b>📤 You have not sent any appeals yet!</b>",
+
+    "bot_info": "\uD83D\uDCCC <b>Official Bot of Olmazor District</b>\n\n\uD83E\uDD16 This bot provides you with the following services:\n\uD83D\uDCCB Submit applications and track their status\n\uD83D\uDCDE A convenient way to contact the district administration\n\n\uD83D\uDC49 Stay connected with us and keep up with the latest updates!",
+
+    "change_name": "👤 Change your name",
+    "change_language": "🚩 Change language",
+    "back": "🔙 Back",
+
+    "success": "<b>✅ Successfully updated!</b>",
+    "cancel": "❌ Cancel",
+    "cancel_success": "<b>✅ Cancelled!</b>",
+
+     "send_appeal_text": "\uD83D\uDD8A\uFE0F <b>Write your appeal...</b>",
+
+    "appeal_created": "✅ <b>✅ Your appeal has been successfully sent!</b>"
+}
