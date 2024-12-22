@@ -372,7 +372,7 @@ async def inline_handler(update: Update, context: ContextTypes.DEFAULT_TYPE) -> 
             # Save data
             context.user_data['appeal_id'] = query.data.split("_")[1]
 
-            keyboard = get_cansel_button_inline(get_user_language(user.id), f"back_{query.data.split("_")[1]}")
+            keyboard = get_cansel_button_inline(get_user_language(user.id), f"back_{query.data.split('_')[1]}")
             reply_markup = InlineKeyboardMarkup(keyboard)
 
             message = "<b>👉 Muroojatga javob yozing:</b>"
@@ -393,7 +393,7 @@ async def inline_handler(update: Update, context: ContextTypes.DEFAULT_TYPE) -> 
                        f"✍️ <b>Muroojat:</b> {appeal[2]}")
 
             reply_markup = InlineKeyboardMarkup([
-                [InlineKeyboardButton(text="✍️ Javob yozish", callback_data=f"appeal_{query.data.split("_")[1]}")]
+                [InlineKeyboardButton(text="✍️ Javob yozish", callback_data=f"appeal_{query.data.split('_')[1]}")]
             ])
 
             await query.edit_message_text(
