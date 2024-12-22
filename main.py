@@ -250,9 +250,9 @@ async def message_handler(update: Update, context: ContextTypes.DEFAULT_TYPE) ->
             for admin_id in ADMIN_IDS:
                 await context.bot.send_message(
                     chat_id=admin_id,
-                    text=f"<b>🪧 Yangi muroojat:</b>\n\n"
+                    text=f"<b>🪧 Yangi murojaat:</b>\n\n"
                          f"🙂 <b>Kimdan: </b>{db_user[1]}({db_user[5]})\n"
-                         f"✍️ <b>Muroojat:</b> {text}",
+                         f"✍️ <b>Murojaat:</b> {text}",
                     parse_mode="HTML",
                     reply_markup=InlineKeyboardMarkup([
                         [InlineKeyboardButton(text="✍️ Javob yozish", callback_data=f"appeal_{appeal[0]}")]
@@ -278,7 +278,7 @@ async def message_handler(update: Update, context: ContextTypes.DEFAULT_TYPE) ->
 
             await context.bot.send_message(
                 chat_id=db.get_appeal(context.user_data['appeal_id'])[1],
-                text=f"🪧 <b>Muroojatingiz:</b> {db.get_appeal(context.user_data['appeal_id'])[2]}\n\n"
+                text=f"🪧 <b>Murojaatingiz:</b> {db.get_appeal(context.user_data['appeal_id'])[2]}\n\n"
                      f"✅ <b>Javob:</b> {db.get_appeal(context.user_data['appeal_id'])[3]}",
                 parse_mode="HTML",
             )
@@ -375,7 +375,7 @@ async def inline_handler(update: Update, context: ContextTypes.DEFAULT_TYPE) -> 
             keyboard = get_cansel_button_inline(get_user_language(user.id), f"back_{query.data.split('_')[1]}")
             reply_markup = InlineKeyboardMarkup(keyboard)
 
-            message = "<b>👉 Muroojatga javob yozing:</b>"
+            message = "<b>👉 Murojaatga javob yozing:</b>"
 
             await query.edit_message_text(text=message, parse_mode="HTML")
             await query.edit_message_reply_markup(reply_markup=reply_markup)
@@ -388,9 +388,9 @@ async def inline_handler(update: Update, context: ContextTypes.DEFAULT_TYPE) -> 
             appeal = db.get_appeal(query.data.split("_")[1])
             appeal_user = db.get_user(appeal[1])
 
-            message = (f"<b>🪧 Javob berilgan muroojat:</b>\n\n"
+            message = (f"<b>🪧 Javob berilgan murojaat:</b>\n\n"
                        f"🙂 <b>Kimdan: </b>{appeal_user[1]}({appeal_user[5]})\n"
-                       f"✍️ <b>Muroojat:</b> {appeal[2]}")
+                       f"✍️ <b>Murojaat:</b> {appeal[2]}")
 
             reply_markup = InlineKeyboardMarkup([
                 [InlineKeyboardButton(text="✍️ Javob yozish", callback_data=f"appeal_{query.data.split('_')[1]}")]

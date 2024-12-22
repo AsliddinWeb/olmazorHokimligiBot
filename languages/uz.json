@@ -5,12 +5,12 @@
     "phone": "📞 Telefon raqam",
     "main_menu": "🌍 <b>Asosiy menyu:</b>",
 
-    "send_appeal": "✍️ Muroojat yuborish",
-    "my_appeals": "👨‍💻 Mening muroojatlarim",
+    "send_appeal": "✍️ Murojaat yuborish",
+    "my_appeals": "👨‍💻 Mening murojaatlarim",
     "settings": "⚙️ Sozlamalar",
     "about": "🤖 Bot haqida",
 
-    "empty_appeals": "<b>📤 Hozircha siz muroojat yubormagansiz!</b>",
+    "empty_appeals": "<b>📤 Hozircha siz murojaat yubormagansiz!</b>",
 
     "bot_info": "\uD83D\uDCCC <b>Olmazor hokimligi rasmiy boti</b>\n\n\uD83E\uDD16 Ushbu bot sizga quyidagi xizmatlarni taqdim etadi:\n\uD83D\uDCCB Arizalarni yuborish va xolatini kuzatish borish\n\uD83D\uDCDE Hokimlik bilan bog‘lanish uchun qulay aloqa vositasi\n\n\uD83D\uDC49 Biz bilan birga bo‘ling va yangiliklardan boxabar bo‘ling!",
 
@@ -23,7 +23,7 @@
     "cancel": "❌ Bekor qilish",
     "cancel_success": "<b>✅ Bekor qilindi!</b>",
 
-    "send_appeal_text": "\uD83D\uDD8A\uFE0F <b>Muroojatingizni yozing...</b>",
+    "send_appeal_text": "\uD83D\uDD8A\uFE0F <b>Murojaatingizni yozing...</b>",
 
-    "appeal_created": "✅ <b>Muroojatingiz muvaffaqqiyatli yuborildi!</b>"
+    "appeal_created": "✅ <b>Murojaatingiz muvaffaqqiyatli yuborildi!</b>"
 }
